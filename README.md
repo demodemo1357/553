@@ -19,12 +19,16 @@ This project provides a comprehensive framework for detecting fake news using va
 ```
 .
 ├── preprocess/
-│   └── preprocess.py       # Helper functions for data preprocessing
-├── bert_classifier.py      # DistilBERT model implementation
-├── lr_svm.py               # Logistic Regression and SVM implementations
-├── plot.py                 # Generates analysis plots and visualizations
-├── requirements.txt        # Project dependencies
-└── lr.png                  # Example output visualization
+│   └── preprocess.py       # Text cleaning & feature prep helpers
+├── bert_classifier.py      # DistilBERT fine-tuning entry point
+├── finetune.py             # Reproduction of BERT on GLUE
+├── lr_svm.py               # Logistic Regression & SVM training script
+├── plot.py                 # Data analysis & visualization utilities
+├── requirements.txt        # Python dependency lock list
+├── test.py                 # Quick experimentation / sanity checks
+├── tokenizer.py            # Tokenizer/WordPiece utilities
+├── wikitext-2_wordpiece.json # Saved tokenizer vocab/config
+└── lr.png                  # Example Logistic Regression metrics plot
 ```
 
 ## Getting Started
