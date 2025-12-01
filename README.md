@@ -34,7 +34,16 @@ Follow these instructions to set up and run the project locally.
 ### Prerequisites
 
 - Python 3.7+
-- pip
+- pandas>=1.3.0
+- numpy>=1.21.0
+- matplotlib>=3.4.0
+- seaborn>=0.11.0
+- scikit-learn>=1.0.0
+- sentence-transformers>=2.2.0
+- transformers>=4.5.0
+- datasets>=1.11.0
+- evaluate==0.4.3
+- torch>=1.9.0
 
 ### Installation
 
@@ -78,7 +87,7 @@ The `preprocess/preprocess.py` script contains helper functions used by the othe
 
 ### 3. Plotting and Visualization
 
-To generate the data analysis plots, simply run the `plot.py` script:
+To generate the data analysis plots, `plot.py` script defines helper functions the project used with a demo:
 ```bash
 python plot.py
 ```
@@ -87,8 +96,9 @@ This will produce visualizations based on the project's data analysis.
 ## Data Sources
 
 The models are trained and evaluated on a combination of datasets:
-1.  Local CSV files (`true.csv` and `fake.csv`).
+1.  Local CSV files from ISOT.
 2.  The "benchmark" dataset from the Neural News Benchmark on HuggingFace.
+3.  new benchmark dataset after data preprocessing
 
 ## Visualization Example
 
