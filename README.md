@@ -1,4 +1,4 @@
-# Fake News Detection using BERT, SVM, and Logistic Regression
+# Bert algorithms reimplementation and New detection NLP tasks
 
 ## Overview
 
