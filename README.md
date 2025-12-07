@@ -1,4 +1,4 @@
-# Bert algorithms reimplementation and New detection NLP tasks
+# Bert algorithms reimplementation and News detection NLP tasks
 
 ## Overview
 
