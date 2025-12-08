@@ -22,6 +22,7 @@ This project provides a comprehensive framework for detecting fake news using va
 │   └── preprocess.py       # Text cleaning & feature prep helpers
 ├── bert_classifier.py      # DistilBERT fine-tuning entry point
 ├── finetune.py             # Reproduction of BERT on GLUE
+├── glue_finetune_all_tasks.py # Script to finetune BERT on GLUE
 ├── lr_svm.py               # Logistic Regression & SVM training script
 ├── plot.py                 # Data analysis & visualization utilities
 ├── requirements.txt        # Python dependency lock list
@@ -70,6 +71,12 @@ The project is structured around a few key Python scripts.
 The `preprocess/preprocess.py` script contains helper functions used by the other scripts for cleaning and preparing the data. It is not meant to be run directly.
 
 ### 2. Model Training & Evaluation
+-   **BERT Finetune on GLUE**
+    Use `glue_finetune_all_tasks.py` to train BERT model on 9 subtasks of GLUE, record evaluation results on validation data and produce results on test data.
+    ```bash
+    # Train, evaluate and generate test results on GLUE dataset
+    python glue_finetune_all_tasks.py
+    ```
 
 -   **Logistic Regression and SVM:**
     Use `lr_svm.py` to train and evaluate the Logistic Regression or SVM models.
